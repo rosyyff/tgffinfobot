@@ -43,7 +43,7 @@ except ImportError:  # images are optional
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("ffinfo")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "9279617648:AAEDV2jXhHsS0Ntb7rBE3AE_EyhoLdECEV8")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 INFO_API = os.getenv("INFO_API", "https://rosyyinfo.vercel.app/info")
 ITEM_API = os.getenv("ITEM_API", "https://starexx.vercel.app/api/items")
 WATERMARK = os.getenv("WATERMARK", "SK")
