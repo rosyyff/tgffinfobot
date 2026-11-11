@@ -67,7 +67,7 @@ logging.getLogger("httpcore").setLevel(logging.WARNING)
 log = logging.getLogger("ffinfo")
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-API_BASE = os.getenv("API_BASE", "https://fruxytaio.vercel.app").rstrip("/")
+API_BASE = os.getenv("API_BASE", "https://rosyyinfo.vercel.app").rstrip("/")
 INFO_API = os.getenv("INFO_API", API_BASE + "/get_player_personal_show")
 INFO_API_FALLBACK = os.getenv("INFO_API_FALLBACK", "https://rosyyinfo.vercel.app/info")  # set empty to disable
 SERVER = os.getenv("INFO_SERVER", "IND")
