@@ -14,7 +14,7 @@ import sys
 
 def _ensure(mod, pkg, required=True):
     try:
-        __import__(mod)
+        __import__(mod) ho
     except ImportError:
         try:
             subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", pkg])
@@ -69,7 +69,7 @@ log = logging.getLogger("ffinfo")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 API_BASE = os.getenv("API_BASE", "https://fruxytaio.vercel.app").rstrip("/")
 INFO_API = os.getenv("INFO_API", API_BASE + "/get_player_personal_show")
-INFO_API_FALLBACK = os.getenv("INFO_API_FALLBACK", "https://fruxytaio.vercel.app/info")  # set empty to disable
+INFO_API_FALLBACK = os.getenv("INFO_API_FALLBACK", "https://rosyyinfo.vercel.app/info")  # set empty to disable
 SERVER = os.getenv("INFO_SERVER", "IND")
 ITEM_API = os.getenv("ITEM_API", "https://starexx.vercel.app/api/items")
 WATERMARK = os.getenv("WATERMARK", "SK")
